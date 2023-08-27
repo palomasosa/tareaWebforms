@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="webformTarea.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/master.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <div id="navbar">
+                <ul>
+                    <li><a href="Default.aspx">Inicio</a></li>
+                    <li><a href="Nosotros.aspx">Nosotros</a></li>
+                    <li><a href="Noticias.aspx">Noticias</a></li>
+                    <li><a href="Contacto.aspx">Contacto</a></li>
+                </ul>
+
+            </div>
+            <div id="cph">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            
+             <div id="footer">
+                <span>contacto@noticias.com</span>
+                <span>Whatsapp +54 155 3534 1927</span>
+                <span>www.noticias.com</span>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
